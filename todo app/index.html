@@ -7,15 +7,29 @@
     <body>
         <div class="appContainer">
             <h2>welcome to todo app</h2>
+            <div class="taskCount">
+                <p>Total Tasks: <span id="totalCount">0</span></p>
+                <p>Completed Tasks: <span id="completedCount">0</span></p>
+            </div>
             <form class="taskForm">
                 <input class="taskInput" id="task" placeholder="enter the task" required type="text">
-                <button class="addTaskBtn" type="submit">add</button>
+                <p class="errorMsg" id="taskError"></p>
 
+                <button class="addTaskBtn" type="submit">add</button> 
+                <div class="sorting">
+                    <button id="newest">Newest Task</button><br>
+                    <button id="oldest">oldest Task</button><br>
+                    <button id="completed">Completed Task</button><br><br>
+                    <button id="clear">clear Completed</button><br>
+
+                </div> 
+             
+                
             </form>
             <div class="taskContainer">
-                
-
+               
             </div>
+                
         </div>
     </body>
 </html>
